@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <script type="text/javascript" src="jsonList.js"></script>
+  <script type="text/javascript" src="function.js">
+  </script>
+  <table class="table">
+    <div class="container">
+      <div class="playing">
+        <picture class="cattyBoard">
+          <source media="(min-width:65px)" srcset="https://vif1g.csb.app/src/assets/cattyboard.jpg" />
+          <img src="https://vif1g.csb.app/src/assets/cattyboard.jpg" alt="CattyBoard"
+            style="margin: 20px 0 0 50px; width: 110px" />
+        </picture>
+        <div class="content">
+          <h5>CattyBoard Top 100 Single Charts(11.06.36)</h5>
+          <p>Unknown Artist</p>
+          <p>2016.Charts.100 songs</p>
+          <div class="moreActions">
+            <script>getData(".moreActions", moreActionIcionList)</script>
+          </div>
+        </div>
+        <div class="nav">
+          <script type="text/javascript">
+            getData(".nav", navIconList, "icons")
+          </script>
+        </div>
+      </div>
+    </div>
+</head>
+
+<body>
+  <script type="text/javascript" src="tableJson.js"></script>
+  <table class="table">
+    <script type="text/javascript">
+      getData(".table", songList)
+    </script>
+  </table>
+</body>
+<footer>
+  <div class="footer">
+    <picture class="cattyBoard">
+      <source media="(min-width:35px)" srcset="https://vif1g.csb.app/src/assets/cattyboard.jpg" />
+      <img src="https://vif1g.csb.app/src/assets/cattyboard.jpg" alt="CattyBoard"
+        style="margin: 15px 0 0 28px; width: 60px" />
+    </picture>
+    <div class="moreAction">
+      <p>If It Ain't Love</p>
+      <p>Catson Derulo</p>
+    </div>
+    <div class="playActions">
+      <script type="text/javascript" src="tableJson.js"></script>
+
+      <script type="text/javascript">
+        getData(".playActions", playActionClassList)
+      </script>
+    </div>
+  </div>
+</footer>
+
+</html>
