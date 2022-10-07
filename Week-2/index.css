@@ -1,0 +1,127 @@
+.main{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin: 120px;
+    /* transition-property: transform;
+    transition-duration: 6s;
+    transition-timing-function: ease; */
+    flex-wrap: wrap;
+}
+
+.transition_1 {
+ height: 100px;
+ width: 100px;
+ background-color: red;
+}
+
+.body {
+    position: relative;
+}
+
+.main > div {
+    position: relative;
+}
+
+.main:hover > .transition_1 {
+    cursor: pointer;
+    animation: transition1 3s  alternate;
+    transition-property: transform;
+}
+
+.main:hover > .transition_2 {
+    cursor: pointer;
+    animation: transition2 3s  alternate;
+    transition-property: transform;
+}
+
+.main:hover > .transition_3 {
+    cursor: pointer;
+    animation: transition3 3s  alternate;
+    transition-property: transform;
+    /* transform: rotate(60deg);
+    visibility: visible; */
+
+}
+
+.main:hover > .transition_4 {
+    cursor: pointer;
+    animation: transition4 3s  alternate;
+    transition-property: transform;
+}
+
+@keyframes transition1 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes transition2 {
+    0% {
+        /* background-color: red; */
+        transform: rotate(0);
+    }
+    100% {
+        /* background-color: red; */
+        transform: rotateZ(-60deg);
+    }
+    /* 100% {
+        transform: rotate(90deg);
+    } */
+}
+
+@keyframes transition3 {
+    0% {
+        /* background-color: red; */
+        transform: rotate(0);
+    }
+    100% {
+        /* background-color: red; */
+        transform: rotateZ(-60deg);
+    }
+    /* 100% {
+        transform: rotate(90deg);
+    } */
+}
+
+@keyframes transition4 {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotateZ(-60deg);
+    }
+}
+
+
+.text {
+    position: absolute;
+    padding: 93px 0px 0px 208px;
+}
+
+.main:hover > text {
+    position: absolute; 
+    margin: 120px;
+    visibility: inherit;
+}
+
+.transition_2 {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+}
+
+.transition_3 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+.transition_4 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
