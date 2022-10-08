@@ -3,9 +3,6 @@
     height: 200px;
     width: 200px;
     margin: 120px;
-    /* transition-property: transform;
-    transition-duration: 6s;
-    transition-timing-function: ease; */
     flex-wrap: wrap;
 }
 
@@ -25,28 +22,25 @@
 
 .main:hover > .transition_1 {
     cursor: pointer;
-    animation: transition1 3s  alternate;
+    animation: transition1 10s  alternate;
     transition-property: transform;
 }
 
 .main:hover > .transition_2 {
     cursor: pointer;
-    animation: transition2 3s  alternate;
+    animation: transition2 10s  alternate;
     transition-property: transform;
 }
 
 .main:hover > .transition_3 {
     cursor: pointer;
-    animation: transition3 3s  alternate;
+    animation: transition3 10s  alternate;
     transition-property: transform;
-    /* transform: rotate(60deg);
-    visibility: visible; */
-
 }
 
 .main:hover > .transition_4 {
     cursor: pointer;
-    animation: transition4 3s  alternate;
+    animation: transition4 10s  alternate;
     transition-property: transform;
 }
 
@@ -61,30 +55,20 @@
 
 @keyframes transition2 {
     0% {
-        /* background-color: red; */
         transform: rotate(0);
     }
     100% {
-        /* background-color: red; */
         transform: rotateZ(-60deg);
     }
-    /* 100% {
-        transform: rotate(90deg);
-    } */
 }
 
 @keyframes transition3 {
     0% {
-        /* background-color: red; */
         transform: rotate(0);
     }
     100% {
-        /* background-color: red; */
         transform: rotateZ(-60deg);
     }
-    /* 100% {
-        transform: rotate(90deg);
-    } */
 }
 
 @keyframes transition4 {
