@@ -1,16 +1,7 @@
-.title {
-    animation: travel 20s ease-in-out infinite;
-    background-image: "furniture.jpg";
-    /* height: 25%; */
-    /* background-color: pink; */
-}
 
 @keyframes travel {
     0% {
         transform: translate3d(0,0,0);
-    }
-    50% {
-        transform: translate3d(-100%,0,0);
     }
     100% {
         transform: translate3d(100%,0,0);
@@ -27,6 +18,8 @@
     width: 280px;
     display: flex;
     margin: -147px 0px 0px 590px;
+    animation: travel 10s ease-in-out forwards;
+    background-image: "furniture.jpg";
 }
 
 .heading > span {
@@ -74,12 +67,8 @@ footer {
 }
 
 footer > div {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    /* background-color: red; */
-    /* color: white; */
+    position: relative;
+    display: inline-block;
     text-align: center;
     /* flex-shrink: initial; */
     margin: 10px 130px 10px 20px;
